@@ -8,3 +8,6 @@ require("hrishik.nvimtree")
 require("hrishik.devicons")
 require("hrishik.lualine")
 require("hrishik.treesitter")
+require("hrishik.autopairs")
+require("hrishik.cmp")
+
