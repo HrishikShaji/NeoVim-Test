@@ -119,6 +119,3 @@ require("mason").setup()
   }
 
 
-  require("lualine").setup()
-  require("nvim-tree").setup()
-  require("nvim-web-devicons").setup()
