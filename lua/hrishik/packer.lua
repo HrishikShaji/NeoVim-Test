@@ -15,7 +15,7 @@ require('packer').startup(function(use)
 
 	use {
 	'goolord/alpha-nvim',
-	requires = { 'nvim-tree/nvim-web-devicons' },
+	requires = { 'kyazdani42/nvim-web-devicons' },
 	config = function ()
 		require'alpha'.setup(require'alpha.themes.startify'.config)
 	end
@@ -27,14 +27,26 @@ use 'hrsh7th/cmp-buffer'
 use 'hrsh7th/cmp-path'
 use 'hrsh7th/cmp-cmdline'
 use 'hrsh7th/nvim-cmp'
+use "kyazdani42/nvim-web-devicons"
 
-
+--checking git
+--checking new line in gutter
 --git
 
 use "airblade/vim-gitgutter"
-  end)
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+}
 
-  require("mason").setup()
+use "mg979/vim-visual-multi"
+
+use "nvim-tree/nvim-tree.lua"
+
+end)
+
+
+require("mason").setup()
 
 
   -- Set up nvim-cmp.
@@ -105,3 +117,8 @@ use "airblade/vim-gitgutter"
   require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
     capabilities = capabilities
   }
+
+
+  require("lualine").setup()
+  require("nvim-tree").setup()
+  require("nvim-web-devicons").setup()
