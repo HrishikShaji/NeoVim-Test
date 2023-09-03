@@ -1,4 +1,4 @@
-import {TestType} from "./types.ts"
+import {TestType} from "./types"
 
 const str = "hello"
 const str2 ={
@@ -6,10 +6,14 @@ const str2 ={
 } as TestType
 
 console.log(str)
-console.log(str2,str3)
+console.log(str2)
+const number = 10
 
-export cont fu
+console.log(number)
+
 
 export const TestFunction = async()=>{
-	console.log(str3)
+	console.log(str,str2)
 }
+
+console.log("hello")
