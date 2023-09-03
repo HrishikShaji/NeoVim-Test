@@ -9,5 +9,4 @@ require("hrishik.devicons")
 require("hrishik.lualine")
 require("hrishik.treesitter")
 require("hrishik.autopairs")
-require("hrishik.cmp")
-
+require("hrishik.lsp")

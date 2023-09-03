@@ -4,7 +4,7 @@ name:string;
 dob:number;
 }
 
-
+console.log(str)
 export const Test:React.FC<TestProps> = async({id,name,dob})=>{
 	return (
 			<div>
