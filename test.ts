@@ -11,7 +11,7 @@ const number = 10
 
 console.log(number)
 
-console.log(y)
+console.log(number)
 console.log(str)
 
 const num = 10
@@ -19,6 +19,11 @@ const num = 10
 console.log(num)
 export const TestFunction = async()=>{
 	console.log(str,str2)
+
+}
+
+export function New (){
+	console.log("gooooooo")
 }
 
 console.log("hello")

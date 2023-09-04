@@ -51,4 +51,4 @@ require('packer').startup(function(use)
 
 end)
 
-
+require("mason").setup()
