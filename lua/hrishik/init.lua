@@ -1,12 +1,7 @@
-require("hrishik.autopairs")
-require("hrishik.devicons")
 require("hrishik.lsp")
-require("hrishik.lualine")
-require("hrishik.nvimtree")
 require("hrishik.packer")
 require("hrishik.remap")
-require("hrishik.treesitter")
 require("hrishik.options")
-require("hrishik.gitsigns")
-require("hrishik.bufferline")
-require("hrishik.colors")
+
+
+
