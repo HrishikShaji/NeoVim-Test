@@ -10,10 +10,12 @@ require('packer').startup(function(use)
 	use "L3MON4D3/LuaSnip"
 	use "saadparwaiz1/cmp_luasnip"
 	use "kyazdani42/nvim-web-devicons"
-	use "airblade/vim-gitgutter"
 	use "mg979/vim-visual-multi"
 	use "nvim-tree/nvim-tree.lua"
 	use "windwp/nvim-autopairs"
+	use "lewis6991/gitsigns.nvim"
+	use "akinsho/bufferline.nvim"
+	use "moll/vim-bbye"
 	use {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
@@ -47,8 +49,9 @@ require('packer').startup(function(use)
 	}
 
 
+	--another just
 
-
+	--adding juust a line
 end)
 
 require("mason").setup()
