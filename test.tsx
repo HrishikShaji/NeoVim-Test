@@ -1,3 +1,5 @@
+import React from "React"
+
 interface TestProps {
 id:string;
 name:string;

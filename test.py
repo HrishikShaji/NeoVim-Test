@@ -1,6 +1,9 @@
-def fname(arg):
+def TestFunction() :
+    print("hello wrold")
 
-    
 
-    pass
+def TestFunction2() :
+    print("fuck you bitch")
 
+TestFunction()
+TestFunction2() 
