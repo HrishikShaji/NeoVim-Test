@@ -26,4 +26,8 @@ export function New (){
 	console.log("gooooooo")
 }
 
+const function = () => {
+
+}
+
 console.log("hello")

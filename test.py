@@ -10,5 +10,7 @@ def TestFunction2() :
 TestFunction()
 TestFunction2()
 
+def Funv() :
+    print("success")
 def Test() :
     print("hooooooo")
