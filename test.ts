@@ -22,6 +22,8 @@ export const TestFunction = async()=>{
 
 }
 
+console.log(num)
+
 export function New (){
 	console.log("gooooooo")
 }

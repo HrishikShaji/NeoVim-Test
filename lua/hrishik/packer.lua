@@ -1,5 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
+--simple line
 require('packer').startup(function(use)
 
 	use 'wbthomason/packer.nvim'	--manage mason
@@ -16,6 +17,15 @@ require('packer').startup(function(use)
 	use "lewis6991/gitsigns.nvim"
 	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
+	use "ellisonleao/gruvbox.nvim"
+
+	use{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	}
+
 	use {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
