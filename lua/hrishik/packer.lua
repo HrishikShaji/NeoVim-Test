@@ -19,6 +19,10 @@ require('packer').startup(function(use)
 	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
 	use "ellisonleao/gruvbox.nvim"
+	use 'mfussenegger/nvim-lint'
+	use "mhartington/formatter.nvim"
+    	use "lukas-reineke/lsp-format.nvim"
+
 
 	use{
 		"folke/tokyonight.nvim",
@@ -26,6 +30,8 @@ require('packer').startup(function(use)
 		priority = 1000,
 		opts = {},
 	}
+
+
 
 	use {
 		"williamboman/mason.nvim",

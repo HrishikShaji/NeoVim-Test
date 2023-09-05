@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -124,6 +129,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["lsp-format.nvim"] = {
+    loaded = true,
+    path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
+    url = "https://github.com/lukas-reineke/lsp-format.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -149,6 +159,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
