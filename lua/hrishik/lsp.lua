@@ -1,6 +1,3 @@
-
-
-
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require("lspconfig").tsserver.setup{
 	capabilities=capabilities,
@@ -47,6 +44,8 @@ require('lspconfig').lua_ls.setup {
 vim.opt.completeopt = {"menu","menuone","noselect"}
 
 local cmp = require'cmp'
+
+require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({
 	snippet = {
