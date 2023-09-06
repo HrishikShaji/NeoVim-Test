@@ -22,7 +22,8 @@ require('packer').startup(function(use)
 	use 'mfussenegger/nvim-lint'
 	use "mhartington/formatter.nvim"
     	use "lukas-reineke/lsp-format.nvim"
-
+	use 'sbdchd/neoformat'
+	use 'dense-analysis/ale'
 
 	use{
 		"folke/tokyonight.nvim",
