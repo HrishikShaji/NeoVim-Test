@@ -7,9 +7,13 @@ function format_prettier()
 end
 
 require('formatter').setup {
-  logging = true,
+  logging = false,
   filetype = {
     typescript = { format_prettier },
     typescriptreact = { format_prettier },
-  }
+  },
+ require("formatter.filetypes.any").remove_trailing_whitespace
+
 }
+
+vim.api.nvim_create_autocmd("BufWritePost *",{command = "FormatWrite"})

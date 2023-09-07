@@ -19,7 +19,7 @@ local on_attach = function(client, bufnr)
 end
 
 local lspconfig = require("lspconfig")
-local servers = { "tailwindcss", "tsserver", "jsonls", "eslint", "pyright" }
+local servers = { "tailwindcss", "tsserver", "jsonls", "pyright" }
 
 for _, lsp in pairs(servers) do
 	lspconfig[lsp].setup {
@@ -27,6 +27,7 @@ for _, lsp in pairs(servers) do
 		on_attach = on_attach
 	}
 end
+
 
 
 lspconfig.cssls.setup {
