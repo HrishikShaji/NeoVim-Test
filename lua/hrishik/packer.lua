@@ -15,6 +15,7 @@ require('packer').startup(function(use)
 	use "mg979/vim-visual-multi"
 	use "nvim-tree/nvim-tree.lua"
 	use "windwp/nvim-autopairs"
+	use "windwp/nvim-ts-autotag"
 	use "lewis6991/gitsigns.nvim"
 	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
