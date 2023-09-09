@@ -26,6 +26,12 @@ require('packer').startup(function(use)
 	use 'sbdchd/neoformat'
 	use 'dense-analysis/ale'
 
+	--rust
+	use "simrat39/rust-tools.nvim"
+	use "mfussenegger/nvim-dap"
+	use "rcarriga/nvim-dap-ui"
+
+
 	use{
 		"folke/tokyonight.nvim",
 		lazy = false,

@@ -30,6 +30,14 @@ end
 
 
 
+lspconfig.rust_analyzer.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	cmd = {
+		"rustup","run","stable","rust_analyzer"
+	}
+}
+
 lspconfig.cssls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities
