@@ -1,6 +1,5 @@
-require("hrishik.lsp")
 require("hrishik.packer")
 require("hrishik.remap")
 require("hrishik.options")
 require("hrishik.rust_config")
-require("hrishik.dap_config")
+require("hrishik.lsp.setup")

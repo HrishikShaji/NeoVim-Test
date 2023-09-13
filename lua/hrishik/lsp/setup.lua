@@ -1,5 +1,10 @@
+
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.foldingRange = {
+	dynamicRegistration = false,
+	lineFoldingOnly = true
+}
 
 local on_attach = function(client, bufnr)
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
@@ -19,7 +24,7 @@ local on_attach = function(client, bufnr)
 end
 
 local lspconfig = require("lspconfig")
-local servers = { "tailwindcss", "tsserver", "jsonls", "pyright" }
+local servers = { "tailwindcss", "jsonls", "pyright" }
 
 for _, lsp in pairs(servers) do
 	lspconfig[lsp].setup {
@@ -49,9 +54,28 @@ lspconfig.html.setup {
 }
 
 
-lspconfig.lua_ls.setup {
+lspconfig.eslint.setup {
 	on_attach = on_attach,
 	capabilities = capabilities
+}
+
+lspconfig.tsserver.setup {
+	on_attach = require("hrishik.lsp.servers.tsserver").on_attach,
+	capabilities = capabilities,
+	settings = require("hrishik.lsp.servers.tsserver").settings
+}
+
+
+lspconfig.lua_ls.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = {"vim","use"}
+			}
+		}
+	}
 }
 
 

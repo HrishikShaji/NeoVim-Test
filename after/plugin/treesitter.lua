@@ -7,7 +7,7 @@ configs.setup {
 		enable_close=true,
 		enable_close_on_slash = true,
 		update_on_insert = true,
-		filetypes={"html","xml","javascript","typescript","typescriptreact","javascriptreact"}
+		filetypes={"html","xml","javascript","typescript","typescriptreact","tsx","jsx","javascriptreact"}
 	},
 	ensure_installed = {"javascript","lua","typescript","c","lua","rust","python"},
 	sync_install = false, 
@@ -15,7 +15,7 @@ configs.setup {
 	highlight = {
 		enable = true, -- false will disable the whole extension
 		disable = { "" }, -- list of language that will be disabled
-		additional_vim_regex_highlighting = true,
+		additional_vim_regex_highlighting = false,
 		
 	},
 	indent = { enable = true, disable = { "yaml" } },

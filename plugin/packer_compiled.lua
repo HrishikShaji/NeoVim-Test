@@ -90,11 +90,6 @@ _G.packer_plugins = {
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -139,6 +134,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
     url = "https://github.com/lukas-reineke/lsp-format.nvim"
+  },
+  ["lsp-inlayhints.nvim"] = {
+    loaded = true,
+    path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/lsp-inlayhints.nvim",
+    url = "https://github.com/lvimuser/lsp-inlayhints.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,

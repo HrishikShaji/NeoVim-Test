@@ -2,8 +2,7 @@ vim.cmd [[packadd packer.nvim]]
 
 --simple line
 require('packer').startup(function(use)
-
-	use 'wbthomason/packer.nvim'	--manage mason
+	use 'wbthomason/packer.nvim' --manage mason
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/cmp-path'
@@ -17,14 +16,16 @@ require('packer').startup(function(use)
 	use "windwp/nvim-autopairs"
 	use "windwp/nvim-ts-autotag"
 	use "lewis6991/gitsigns.nvim"
-	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
 	use "ellisonleao/gruvbox.nvim"
 	use 'mfussenegger/nvim-lint'
 	use "mhartington/formatter.nvim"
-    	use "lukas-reineke/lsp-format.nvim"
+	use "lukas-reineke/lsp-format.nvim"
+
 	use 'sbdchd/neoformat'
 	use 'dense-analysis/ale'
+
+	use "lvimuser/lsp-inlayhints.nvim"
 
 	--rust
 	use "simrat39/rust-tools.nvim"
@@ -32,26 +33,35 @@ require('packer').startup(function(use)
 	use "rcarriga/nvim-dap-ui"
 
 
-	use{
-		"folke/tokyonight.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {},
+	use {
+
+		"folke/tokyonight.nvim",
+
+		lazy = false,
+
+		priority = 1000,
+
+		opts = {},
+
 	}
 
 
 
-	use {
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
-		"neovim/nvim-lspconfig",
+	use {
+
+		"williamboman/mason.nvim",
+
+		"williamboman/mason-lspconfig.nvim",
+
+		"neovim/nvim-lspconfig",
+
 	}
 
 	use {
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
-		config = function ()
-			require'alpha'.setup(require'alpha.themes.startify'.config)
+		config = function()
+			require 'alpha'.setup(require 'alpha.themes.startify'.config)
 		end
 	}
 
@@ -64,9 +74,9 @@ require('packer').startup(function(use)
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.2',
 		-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		requires = { { 'nvim-lua/plenary.nvim' } }
+	
 	}
-
 
 	use {
 		"nvim-treesitter/nvim-treesitter",
