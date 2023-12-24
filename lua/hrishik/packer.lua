@@ -6,7 +6,8 @@ require('packer').startup(function(use)
 	use "windwp/nvim-autopairs"
 	use "windwp/nvim-ts-autotag"
 	use "mhartington/formatter.nvim"
-
+        use "ThePrimeagen/vim-be-good"
+	use "nvimtools/none-ls.nvim"
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {

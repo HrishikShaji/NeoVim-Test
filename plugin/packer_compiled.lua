@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["none-ls.nvim"] = {
+    loaded = true,
+    path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -184,6 +189,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/home/hrishik/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
   }
 }
 
