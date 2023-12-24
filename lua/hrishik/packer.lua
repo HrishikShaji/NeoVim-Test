@@ -8,9 +8,8 @@ require('packer').startup(function(use)
 	use "mhartington/formatter.nvim"
         use "ThePrimeagen/vim-be-good"
 	use "nvimtools/none-ls.nvim"
+	use  {'VonHeikemen/lsp-zero.nvim',branch="v3.x"}
 	use {
-		'VonHeikemen/lsp-zero.nvim',
-		requires = {
 			-- LSP Support
 			{'neovim/nvim-lspconfig'},             -- Required
 			{'williamboman/mason.nvim'},           -- Optional
@@ -26,7 +25,6 @@ require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},     -- Required
 			{"rafamadriz/friendly-snippets"}
 
-		}
 	}
 
 	use {
